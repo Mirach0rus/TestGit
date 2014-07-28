@@ -16,15 +16,15 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    [self printText];
+    [self printText:@"Hi!"];
     
     [self.window makeKeyAndVisible];
     return YES;
 }
 
-- (void)printText
+- (void)printText:(NSString *)text
 {
-    NSLog(@"printText");
+    NSLog(@"printText:%@", text);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
